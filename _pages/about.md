@@ -2,37 +2,36 @@
 layout: about
 title: About
 permalink: /
-subtitle: Notes, projects, and research by Jinseok Chun
+subtitle: M.S. Student · Manufacturing and Service Systems Lab, KAIST
 
 profile:
   align: left
   image: prof_pic.jpg
-  image_circular: false # rounded square; see assets/css/main.scss
+  image_circular: false # rounded corners; see assets/css/main.scss
   more_info: >
-    <p><a href="mailto:martin3433@gmail.com">martin3433@gmail.com</a></p>
-    <p><a href="https://github.com/JinseokChun">github.com/JinseokChun</a></p>
+    <p><i class="fa-solid fa-building-columns"></i> Manufacturing and Service Systems Lab, KAIST</p>
+    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:martin3433@kaist.ac.kr">martin3433@kaist.ac.kr</a></p>
+    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/jinseok-chun-a89b25382/">LinkedIn</a></p>
+    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/JinseokChun">GitHub</a></p>
 
 selected_papers: false # set to true once _bibliography/papers.bib has entries marked selected={true}
 social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  scrollable: false
+  limit: # blank shows every item in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Hi, I'm **Jinseok Chun**.
+I am **Jinseok Chun**, an M.S. student in AX at [KAIST](https://www.kaist.ac.kr/en/), working in the Manufacturing and Service Systems Lab under Prof. Hyunjung Kim. I received my B.S. in Systems Management Engineering from Sungkyunkwan University.
 
-This is my personal homepage. I use it to keep track of what I am studying, the projects I build, and the work I publish.
+My research interests are
 
-- [**Publications**](/publications/) — papers and talks
-- [**Projects**](/projects/) — things I have built
-- [**Notes**](/blog/) — what I learn, written down
-- [**CV**](/cv/) — education and experience
+- **Scheduling** — production and manufacturing scheduling problems
+- **Reinforcement learning** — learning policies for sequential decisions in manufacturing systems
+- **Machine learning** — data-driven methods for optimization
 
-The quickest way to reach me is by email.
+I take part in an NRF-funded project on workload flow regulation and capacity allocation for semiconductor fabs, combining feedback control with reinforcement learning. See [Projects](/projects/) for details and my [CV](/cv/) for the full record.
