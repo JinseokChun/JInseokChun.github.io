@@ -1,0 +1,40 @@
+# CV data rendered on /cv/ (RenderCV format).
+# Fill in the sections below and uncomment them; each section appears on the page once it has entries.
+cv:
+  name: Jinseok Chun
+  email: martin3433@gmail.com
+
+  social_networks:
+    - network: GitHub
+      username: JinseokChun
+
+  sections:
+    {}
+    # Education:
+    #   - institution: University name
+    #     location: City, Country
+    #     area: Major
+    #     studyType: B.S.
+    #     start_date: 2020-03
+    #     end_date: present
+    #     highlights:
+    #       - Something worth mentioning.
+    #
+    # Experience:
+    #   - company: Company or lab
+    #     position: Role
+    #     location: City, Country
+    #     start_date: 2024-01
+    #     end_date: present
+    #     highlights:
+    #       - What you did.
+    #
+    # Skills:
+    #   - name: Programming
+    #     keywords: "Python, C++"
+    #
+    # Languages:
+    #   - name: Korean
+    #     summary: Native
+    #   - name: English
+    #     summary: Fluent

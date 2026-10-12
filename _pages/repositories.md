@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
-description: GitHub 활동과 저장소
+title: Repositories
+description: GitHub activity and repositories.
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 {% if site.data.repositories.github_users %}

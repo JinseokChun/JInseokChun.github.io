@@ -1,10 +1,10 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: 진행한 프로젝트 모음
+description: Things I have built and worked on.
 nav: true
-nav_order: 3
+nav_order: 2
 display_categories: [work]
 horizontal: false
 ---
