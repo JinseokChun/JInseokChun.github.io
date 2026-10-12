@@ -7,14 +7,14 @@ first_name: Jinseok
 middle_name:
 last_name: Chun
 contact_note: >
-  궁금한 점이 있으면 이메일로 편하게 연락 주세요.
+  Email is the best way to reach me — I usually reply within a few days.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Jinseok Chun의 개인 홈페이지입니다. 끄적끄적 공부 기록.
+  Personal homepage of Jinseok Chun — notes, projects, publications, and CV.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Jinseok Chun, homepage, blog # add your own keywords or leave empty
-lang: ko # the language of your site (for example: en, fr, cn, ru, etc.)
+keywords: Jinseok Chun, homepage, portfolio, blog # add your own keywords or leave empty
+lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌱 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
@@ -71,7 +71,7 @@ al_folio:
     allow_remote_loader: false
   features:
     cv:
-      enabled: false
+      enabled: true
     distill:
       enabled: true
   compat:
@@ -95,7 +95,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
@@ -135,8 +135,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: 공부 기록 # blog_name will be displayed in your blog page
-blog_description: 끄적끄적 공부한 것들을 남기는 곳
+blog_name: Notes # blog_name will be displayed in your blog page
+blog_description: Things I learn, written down so I do not forget them
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -536,7 +536,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700|Source+Serif+4:400,600,700|Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:

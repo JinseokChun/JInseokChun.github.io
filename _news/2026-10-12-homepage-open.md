@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-개인 홈페이지를 새로 열었습니다! :sparkles:
+Launched this homepage. Publications, projects, and notes will be added here over time. :seedling:
