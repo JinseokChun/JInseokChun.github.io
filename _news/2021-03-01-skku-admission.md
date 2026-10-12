@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my B.S. in **Systems Management Engineering** at Sungkyunkwan University. :school:
+Started my B.S. in **Systems Management Engineering** at Sungkyunkwan University.

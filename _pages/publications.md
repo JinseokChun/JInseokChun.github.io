@@ -14,7 +14,7 @@ nav_order: 1
 
 {% if pub_count == "0" %}
 
-<p class="publications-empty">Nothing listed yet — papers and talks will appear here as they come out.</p>
+<p class="publications-empty">Nothing listed yet — papers and talks will appear here as they come&nbsp;out.</p>
 
 {% else %}
 

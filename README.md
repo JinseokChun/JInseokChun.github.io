@@ -13,7 +13,7 @@ Jinseok Chun의 개인 홈페이지 — https://jinseokchun.github.io
 | 프로필 사진 | `assets/img/prof_pic.jpg` |
 | 논문 목록 (Publications) | `_bibliography/papers.bib` (BibTeX 형식, `selected={true}`를 붙이면 첫 화면에도 표시 → `_pages/about.md`의 `selected_papers: true`) |
 | 색상·글꼴 | `assets/css/main.scss` 맨 아래 "Site customizations" 부분 |
-| 프로젝트 | `_projects/*.md` (카드 이미지는 `assets/img/projects/`) |
+| 프로젝트 | `_projects/*.md` (Projects 페이지에 전부 펼쳐서 표시, 순서는 `importance`, 로고는 `assets/img/projects/`) |
 | 이력서 (CV) | `assets/pdf/Jinseok_Chun_CV.pdf` 교체 후 미리보기 이미지 다시 만들기: `pdftoppm -r 200 -png -singlefile assets/pdf/Jinseok_Chun_CV.pdf assets/img/cv/cv-page-1` |
 | 소식(news) | `_news/YYYY-MM-DD-title.md` (첫 화면에는 "월 연도"로 표시) |
 | 연락처·SNS 아이콘 | `_data/socials.yml` |

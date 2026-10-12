@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduated from Sungkyunkwan University with a B.S. in Systems Management Engineering. :mortar_board:
+Graduated from Sungkyunkwan University with a B.S. in Systems Management Engineering.

@@ -193,7 +193,7 @@ collections:
       layout: post
     output: true
   projects:
-    output: true
+    output: false # projects are shown in full on /projects/, no separate detail pages
   teachings:
     output: true
 
