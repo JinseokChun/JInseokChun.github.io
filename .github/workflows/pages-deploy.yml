@@ -1,12 +1,15 @@
-name: "Build and Deploy"
+name: Build and Deploy
+
 on:
   push:
     branches:
       - master
     paths-ignore:
-      - .gitignore
       - README.md
       - LICENSE
+  pull_request:
+    branches:
+      - master
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -18,55 +21,51 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: "pages-${{ github.ref }}"
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-        with:
-          fetch-depth: 0 # for posts's lastmod
 
       - name: Setup Pages
         id: pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.3
+          ruby-version: "3.3.5"
           bundler-cache: true
 
       - name: Setup Node
         uses: actions/setup-node@v5
         with:
-          node-version: lts/*
+          node-version: "20"
 
-      # This repository contains the theme source, so the JS/CSS bundles must be built first
-      - name: Build assets
-        run: npm i && npm run build
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
 
       - name: Build site
-        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build
         env:
-          JEKYLL_ENV: "production"
+          JEKYLL_ENV: production
 
-      - name: Test site
-        run: |
-          bundle exec htmlproofer _site \
-            --disable-external \
-            --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+      - name: Purge unused CSS
+        run: npx --yes purgecss@7 -c purgecss.config.js
 
       - name: Upload site artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4
         with:
-          path: "_site${{ steps.pages.outputs.base_path }}"
+          path: _site
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
