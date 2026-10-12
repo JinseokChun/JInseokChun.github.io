@@ -159,3 +159,134 @@ h3,
   border-radius: 0.75rem;
   color: var(--global-text-color-light);
 }
+
+/* CV page: PDF actions and the rendered page shown as a sheet of paper */
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0.5rem 0 1.75rem;
+}
+
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 999px;
+  color: var(--global-theme-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.cv-button:hover {
+  background-color: var(--site-accent-soft);
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.cv-button-primary {
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color);
+}
+
+.cv-button-primary:hover {
+  background-color: var(--global-hover-color);
+  color: var(--global-bg-color);
+}
+
+.cv-sheet {
+  margin: 0 auto 2rem;
+  max-width: 820px;
+  padding: 0;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 12px 40px rgba(15, 30, 50, 0.12);
+}
+
+.cv-sheet img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Project detail page */
+.project-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-meta {
+  margin-bottom: 2rem;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--global-theme-color);
+  border-radius: 0 0.75rem 0.75rem 0;
+  background: var(--site-accent-soft);
+}
+
+.project-meta-row {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 0.75rem;
+  padding: 0.3rem 0;
+}
+
+.project-meta-label {
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-top: 0.15rem;
+}
+
+@media (max-width: 576px) {
+  .project-meta-row {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-tags span {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+}
+
+/* News: month/year column stays compact */
+.news th {
+  white-space: nowrap;
+  color: var(--global-theme-color);
+  font-weight: 600;
+}
+
+/* Projects list: one wide card per row so long titles fit */
+.projects .row-cols-md-2 > * {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.projects .card .card-title {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.projects .card .card-img {
+  height: 100%;
+  object-fit: cover;
+}

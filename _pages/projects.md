@@ -2,11 +2,11 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Things I have built and worked on.
+description: Research projects I take part in.
 nav: true
 nav_order: 2
-display_categories: [work]
-horizontal: false
+display_categories: [research]
+horizontal: true
 ---
 
 <!-- pages/projects.md -->
