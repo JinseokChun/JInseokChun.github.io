@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Won the **Challenge Prize (5th place / 343 teams)** at the Optimization Grand Challenge 2025, hosted by KIIE & LG CNS. :trophy:
+Won the **Challenge Prize (5th place / 343 teams)** at the Optimization Grand Challenge 2025, hosted by KIIE&nbsp;&amp;&nbsp;LG&nbsp;CNS.

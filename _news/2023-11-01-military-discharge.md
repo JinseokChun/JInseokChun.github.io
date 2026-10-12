@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Completed military service in the Republic of Korea Army, discharged as a **Sergeant**. :kr:
+Completed military service in the Republic of Korea Army, discharged as a **Sergeant**.

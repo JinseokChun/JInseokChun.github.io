@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my M.S. in **AX** at KAIST, joining the Manufacturing and Service Systems Lab. :tada:
+Started my M.S. in **AX** at KAIST, joining the Manufacturing and Service Systems Lab.
